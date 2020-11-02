@@ -18,12 +18,12 @@ void findOdd(ull start, ull end, ull* OddSum) {
 	for (ull i = start; i <= end; ++i) {
 		if (i & 1) {
 			(*OddSum) += i;
+
 		}
 	}
 }
 
 int main() {
-
 	ull start = 0, end = 1900000000;
 
 	ull OddSum = 0;
@@ -40,7 +40,7 @@ int main() {
 
 	// // WITHOUT THREAD
 	// findEven(start,end, &EvenSum);
-	// findOdd(start, end, &OddSum);
+	//findOdd(start, end, &OddSum);
 	auto stopTime = high_resolution_clock::now();
 	auto duration = duration_cast<microseconds>(stopTime - startTime);
 
